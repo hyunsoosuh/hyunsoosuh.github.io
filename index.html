@@ -270,6 +270,26 @@
     letter-spacing: 0.1em;
   }
 
+  .abs { margin-top: 10px; }
+  .abs summary {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--accent);
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .abs summary::-webkit-details-marker { display: none; }
+  .abs summary::after { content: "+"; font-size: 12px; line-height: 1; }
+  .abs[open] summary::after { content: "\2013"; }
+  .abs summary:hover { color: var(--ink); }
+  .abs summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .abs p { margin: 10px 0 0; font-size: 14.5px; line-height: 1.66; color: var(--ink-soft); max-width: 64ch; }
+
   /* ---------- teaching ---------- */
   .inst {
     font-family: var(--serif);
@@ -404,11 +424,15 @@
         <article class="paper">
           <h3><a href="https://www.aeaweb.org/articles?id=10.1257/pandp.20261122" target="_blank" rel="noopener">Beyond Time and Money: Parental Occupation and Early Childhood Development</a></h3>
           <p class="venue">AEA Papers &amp; Proceedings · 116: 605–610</p>
+        
+          <details class="abs"><summary>Abstract</summary><p>This paper examines how parental occupation shapes early cognitive and noncognitive child development. Using the Millennium Cohort Study and the British Household Panel Survey, I document that parents allocate time in home production and market work differently across occupations. Estimating a system of simultaneous equations through three-stage least squares, I find that parental occupation is an important determinant of child skill formation beyond time and money: Maternal employment is associated with higher cognitive and noncognitive skills, while paternal self-employment is associated with higher noncognitive skills. Returns to parental time are higher among college-educated parents, consistent with skill-biased parenting.</p></details>
         </article>
         <article class="paper">
           <h3>Socio-Economic Inequalities in Multidimensional Early Child Development: Evidence from France</h3>
           <p class="coauthors">with <a href="https://sites.google.com/site/lidiapanico00/home" target="_blank" rel="noopener">Lidia Panico</a> and <a href="https://annesolaz.site.ined.fr/en/" target="_blank" rel="noopener">Anne Solaz</a></p>
           <p class="venue"><span class="status">Conditionally accepted</span> Population</p>
+        
+          <details class="abs"><summary>Abstract</summary><p>Socio-economic inequalities in early child development are well documented, yet the mechanisms through which these disparities emerge and persist remain debated. This paper examines inequalities across five developmental domains&mdash;language, behavior, fine motor skills, gross motor skills, and toilet training&mdash;in France, a country characterized by a generous welfare state and broad access to early childcare. Using nationally representative data on approximately 18,000 children born in 2011, we document disparities at age two, by maternal education, and decompose these gaps into contributions from child characteristics, household demographics, household economic resources, parenting practices, and childcare arrangements. Large educational gradients emerge in language development, while inequalities in other domains are not observed or occasionally favor more disadvantaged groups. Both parenting and childcare matter in shaping these gaps, though their relative importance varies across domains. The findings underscore the importance of a multidimensional perspective on early child development when assessing the origins of socio-economic inequality.</p></details>
         </article>
       </div>
     </section>
@@ -421,11 +445,15 @@
           <h3><a href="FosterPollSuhECD.pdf">Female Micro-Entrepreneurship and Child Development</a></h3>
           <p class="coauthors">with <a href="https://afosterri.org/afoster/" target="_blank" rel="noopener">Andrew Foster</a> and <a href="https://www.moritz-poll.com/" target="_blank" rel="noopener">Moritz Poll</a></p>
           <p class="venue"><a href="https://www.povertyactionlab.org/initiative-project/female-micro-entrepreneurship-and-child-development" target="_blank" rel="noopener">J-PAL GEA</a> · <a href="https://www.povertyactionlab.org/initiative-project/child-focused-ultra-poor-graduation" target="_blank" rel="noopener">J-PAL LAI</a> · <a href="https://pstc.brown.edu/news/2025-11-26/micro-enterprise-support-moms-malawi" target="_blank" rel="noopener">PSTC</a></p>
+        
+          <details class="abs"><summary>Abstract</summary><p>Ultra-poor graduation programs (UPG) reliably reduce extreme poverty among adult recipients, yet their intergenerational effects on children remain largely undocumented. We study a child-focused UPG in rural Malawi that augments the standard graduation bundle with early childhood development (ECD) training, targeting mothers with young children in a population that is both severely stunted and approximately 1 SD behind international benchmarks on cognitive and non-cognitive development. In an RCT of 1,872 households, we show that the intervention raises child development by 0.16 to 0.26 SD within one year but has no significant effects on anthropometrics. Behind the impacts is a broad shift in parental inputs and behaviors. The results demonstrate that a child-focused anti-poverty program can generate child development gains that have not been documented in comparable programs without a child focus.</p></details>
         </article>
         <article class="paper">
           <h3><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5429296" target="_blank" rel="noopener">Mental Health and the Early Career Dynamics of Young Men</a></h3>
           <p class="coauthors">with <a href="https://sites.google.com/view/ceciliadiazcampo" target="_blank" rel="noopener">Cecilia Diaz-Campo</a>, <a href="https://www.bartonhamilton.com/" target="_blank" rel="noopener">Barton Hamilton</a>, and <a href="https://sites.google.com/view/martinluccioni" target="_blank" rel="noopener">Martin Luccioni</a></p>
           <p class="venue">SSRN</p>
+        
+          <details class="abs"><summary>Abstract</summary><p>Does poor health scar early-career labor market trajectories, and does resilience help recovery? Using longitudinal data from HILDA and treating adverse life events as plausibly exogenous health shocks, we estimate a dynamic discrete choice model of mental and physical health evolution and its two-way interaction with schooling and employment decisions, allowing for unobserved heterogeneity in productivity and resilience. Poor mental health reduces full-time employment, raises non-employment, and leaves persistent earnings scars. Resilience determines the speed of recovery: low-resilience individuals rebound more slowly, remain more exposed to transitory disruptions, and are willing to pay more to avoid the early-adulthood mental health dip. Mental health follows a U-shape over early adulthood, and willingness to pay peaks where it is lowest. Always-good mental health raises lifetime welfare by 65.8% of lifetime consumption; the dip alone costs low-resilience individuals 6.0%. Mental health support targeted at low-resilience youth yields the largest welfare gains.</p></details>
         </article>
       </div>
     </section>

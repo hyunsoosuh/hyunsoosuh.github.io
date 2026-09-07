@@ -159,7 +159,8 @@
 
   .lede { font-size: 18px; line-height: 1.62; margin: 0; max-width: 62ch; }
   .bio p.sub { margin: 18px 0 0; max-width: 62ch; color: var(--ink-soft); font-size: 15.5px; }
-  .bio p.market { margin: 14px 0 0; max-width: 62ch; font-size: 15.5px; color: var(--ink); }
+  .bio p.visiting-line { margin: 14px 0 0; max-width: 62ch; font-size: 15.5px; color: var(--ink-soft); }
+.bio p.market { margin: 16px 0 0; max-width: 62ch; font-size: 17.5px; color: var(--ink); }
   .bio strong { color: var(--ink); font-weight: 500; }
 
   .eyebrow {

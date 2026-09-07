@@ -156,7 +156,7 @@
   section[id] { scroll-margin-top: 24px; }
   .main { display: flex; flex-direction: column; gap: 34px; min-width: 0; }
 
-  .bio { max-width: 580px; }
+  .bio { max-width: 632px; }
   .lede { font-size: 18px; line-height: 1.62; margin: 0; }
   .bio p.sub,
   .bio p.visiting-line,
@@ -181,6 +181,9 @@
     border-left: 2px solid var(--accent);
     padding: 26px 28px;
     border-radius: 0 3px 3px 0;
+    /* pull left by border + padding so the abstract text lines up with the bio */
+    margin-left: -30px;
+    max-width: 690px;   /* 632 text + 28 + 28 padding + 2 border */
   }
   .jmp-tag {
     font-family: var(--sans);
@@ -206,7 +209,6 @@
     font-size: 15px;
     line-height: 1.7;
     color: var(--ink-soft);
-    max-width: 64ch;
   }
   .jmp .abstract .lbl { font-family: var(--serif); font-style: italic; color: var(--ink); }
 
@@ -355,7 +357,7 @@
     .rail-name { font-size: 27px; }
     .main { gap: 44px; }
     .lede { font-size: 17px; }
-    .jmp { padding: 22px 20px; }
+    .jmp { padding: 22px 20px; margin-left: 0; max-width: none; }
     .course { grid-template-columns: 1fr; }
     .course .cmeta { margin-top: 2px; }
   }

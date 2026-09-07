@@ -156,10 +156,11 @@
   section[id] { scroll-margin-top: 24px; }
   .main { display: flex; flex-direction: column; gap: 34px; min-width: 0; }
 
-  .lede { font-size: 18px; line-height: 1.62; margin: 0; max-width: 62ch; }
+  .bio { max-width: 580px; }
+  .lede { font-size: 18px; line-height: 1.62; margin: 0; }
   .bio p.sub,
   .bio p.visiting-line,
-  .bio p.market { margin: 15px 0 0; max-width: 62ch; font-size: 15.5px; color: var(--ink); }
+  .bio p.market { margin: 15px 0 0; font-size: 15.5px; color: var(--ink); }
   .bio strong { color: var(--ink); font-weight: 500; }
 
   .eyebrow {

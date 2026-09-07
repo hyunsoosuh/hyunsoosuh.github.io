@@ -88,6 +88,7 @@
 
   .rail-role { color: var(--ink-soft); font-size: 14.5px; line-height: 1.5; margin: 6px 0 0; }
   .rail-role strong { color: var(--ink); font-weight: 500; }
+.visiting { display: inline-block; margin-top: 5px; font-size: 13.5px; color: var(--ink-soft); }
 
   .rail-links { display: flex; flex-direction: column; gap: 2px; border-top: 1px solid var(--rule); padding-top: 16px; }
   .rail-links a {

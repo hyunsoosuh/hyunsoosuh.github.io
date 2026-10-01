@@ -1,4 +1,4 @@
-/* Accent sampled from the portrait: #48371E / #574B2F / #906F58 */
+/* Monochrome: accent follows the ink colour in each theme (was gold-brown #7C5A22 / #C79A4A) */
   :root {
     --paper:      #FCFBF8;
     --panel:      #F5F2EA;
@@ -6,9 +6,9 @@
     --ink-soft:   #4C4539;
     --ink-faint:  #6B6355;
     --rule:       #E5E1D7;
-    --accent:     #7C5A22;
-    --accent-ink: #614619;
-    --accent-wash:#F2EBDC;
+    --accent:     #1A1712;
+    --accent-ink: #1A1712;
+    --accent-wash:#EFECE3;
 
     --serif: "Newsreader", Georgia, "Times New Roman", serif;
     --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -22,9 +22,9 @@
     --ink-soft:   #B4AB9E;
     --ink-faint:  #9A9184;
     --rule:       #2F2B23;
-    --accent:     #C79A4A;
-    --accent-ink: #D9B36A;
-    --accent-wash:#241F14;
+    --accent:     #E9E5DC;
+    --accent-ink: #E9E5DC;
+    --accent-wash:#24211A;
   }
 
   * { box-sizing: border-box; }

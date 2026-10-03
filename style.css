@@ -1,14 +1,14 @@
-/* Monochrome: accent follows the ink colour in each theme (was gold-brown #7C5A22 / #C79A4A) */
+/* White paper with gold-brown accent (#7C5A22 light / #C79A4A dark) */
   :root {
-    --paper:      #FCFBF8;
+    --paper:      #FFFFFF;
     --panel:      #F5F2EA;
     --ink:        #1A1712;
     --ink-soft:   #4C4539;
     --ink-faint:  #6B6355;
     --rule:       #E5E1D7;
-    --accent:     #1A1712;
-    --accent-ink: #1A1712;
-    --accent-wash:#EFECE3;
+    --accent:     #7C5A22;
+    --accent-ink: #614619;
+    --accent-wash:#F7F1E3;
 
     --serif: "Newsreader", Georgia, "Times New Roman", serif;
     --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -22,9 +22,9 @@
     --ink-soft:   #B4AB9E;
     --ink-faint:  #9A9184;
     --rule:       #2F2B23;
-    --accent:     #E9E5DC;
-    --accent-ink: #E9E5DC;
-    --accent-wash:#24211A;
+    --accent:     #C79A4A;
+    --accent-ink: #D9B36A;
+    --accent-wash:#241F14;
   }
 
   * { box-sizing: border-box; }

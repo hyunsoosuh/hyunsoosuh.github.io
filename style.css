@@ -408,7 +408,7 @@
 
 
   /* ---------- content pages: no sidebar ---------- */
-  .shell.wide { grid-template-columns: minmax(0, 1fr); max-width: 820px; }
+  .shell.wide { grid-template-columns: minmax(0, 1fr); max-width: 1080px; }
   .topbar-name {
     font-family: var(--serif);
     font-size: 17px;
@@ -420,7 +420,7 @@
   .topbar-name:hover { color: var(--accent); }
   .topbar .theme-toggle { margin: 0 0 0 26px; align-self: center; }
   /* keep prose at a readable measure even in the wider column */
-  .shell.wide .abs p { max-width: 68ch; }
+  .shell.wide .abs p { max-width: none; }
 
   /* ---------- page heading (Research / Teaching) ---------- */
 .page-title {

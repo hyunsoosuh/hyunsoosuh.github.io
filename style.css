@@ -421,7 +421,6 @@
   .topbar .theme-toggle { margin: 0 0 0 26px; align-self: center; }
   /* keep prose at a readable measure even in the wider column */
   .shell.wide .abs p { max-width: 68ch; }
-  .shell.wide .paper h3 { max-width: 40ch; }
 
   /* ---------- page heading (Research / Teaching) ---------- */
 .page-title {

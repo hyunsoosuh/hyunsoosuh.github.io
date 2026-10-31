@@ -432,3 +432,83 @@
   padding-bottom: 12px;
   border-bottom: 1px solid var(--rule);
 }
+
+
+/* ======================================================================
+   2026 redesign — Palatino, burgundy, one type scale.
+   Everything below overrides the rules above it.
+   ====================================================================== */
+
+/* ===== Palatino throughout — the same face as the CV ===== */
+:root, :root[data-theme="dark"] {
+  --serif: Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", "TeX Gyre Pagella", Georgia, serif;
+  --sans:  Palatino, "Palatino Linotype", "Book Antiqua", "URW Palladio L", "TeX Gyre Pagella", Georgia, serif;
+}
+body { font-family: var(--serif); }
+
+/* Palatino has only Regular and Bold — a weight of 500 renders as Regular,
+   so anything meant to read as emphasised has to go to 600/700. */
+strong, b { font-weight: 700; }
+.rail-role strong,
+.paper h3,
+.inst,
+.topbar a.here,
+.page-title,
+.rail-name,
+.jmp-title,
+.role-label,
+.eyebrow,
+.venue .status,
+.abs summary { font-weight: 600; }
+.jmp-title, .paper h3, .page-title, .rail-name { letter-spacing: -0.006em; }
+
+/* section labels: burgundy on every page, as on Home and Teaching */
+.eyebrow { color: var(--accent); }
+
+/* Palatino's italic is quieter than Newsreader's — give these a little help */
+.coauthors { font-style: italic; }
+.jmp .abstract .lbl { font-style: italic; font-weight: 600; }
+
+/* ---- one type scale, seven sizes, each with a single job ----
+   27  page title
+   18  item titles   (paper, course, institution)
+   16  body prose    (bio, abstracts, affiliation, links)
+   14.5 metadata     (venue, coauthors, course detail, semester, nav, footer)
+   11.5 section labels                                               */
+
+.abs p            { font-size: 16px; }     /* body prose */
+
+.paper h3         { font-size: 18px; }     /* item title */
+.inst             { font-size: 18px; }     /* item title */
+.course .cname    { font-size: 18px; }     /* item title — was 16px */
+
+.venue            { font-size: 14.5px; }   /* metadata */
+.coauthors        { font-size: 14.5px; }
+.course .cdetail  { font-size: 14.5px; letter-spacing: 0.03em; }
+.course .cmeta    { font-size: 14.5px; }   /* was 13.5px */
+footer            { font-size: 14.5px; }   /* was 13px */
+
+/* `.topbar a` outranks `.topbar-name`, so the name was rendering at nav size */
+.topbar a.topbar-name { font-size: 16px; font-weight: 600; color: var(--ink); }
+
+/* ===== page width ===== */
+
+/* abstracts run the full width of the page, same as the one on Home */
+.shell.wide .abs p { max-width: none; }
+
+/* course rows run the full width, so each rule reaches the right edge */
+.courses { max-width: none; }
+
+/* ===== burgundy accent, taken from the Beamer slides ===== */
+:root {
+  --accent:      #6E1428;   /* RGB(110,20,40) — \definecolor{burgundy} */
+  --accent-ink:  #5A1020;
+  --accent-wash: #FAEDF0;   /* RGB(250,237,240) — \definecolor{rowshade} */
+}
+:root[data-theme="dark"] {
+  /* #6E1428 is only 1.6:1 on the dark page and #AC5066 only 3.6:1 —
+     both unreadable. This is the burgundy lightened to clear 4.5:1. */
+  --accent:      #C8798C;
+  --accent-ink:  #D89AA8;
+  --accent-wash: #2A181D;
+}

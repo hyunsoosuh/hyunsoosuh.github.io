@@ -512,3 +512,28 @@ footer            { font-size: 14.5px; }   /* was 13px */
   --accent-ink:  #D89AA8;
   --accent-wash: #2A181D;
 }
+
+/* ======================================================================
+   Section headings — make the divisions between sections legible at a
+   glance: a larger label, a burgundy rule, and real space above.
+   ====================================================================== */
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid color-mix(in srgb, var(--accent) 38%, transparent);
+}
+section[id] + section[id] { margin-top: 42px; }
+
+/* Teaching uses .role-label where Research uses .eyebrow — same treatment,
+   so the two pages read as one system. */
+.role-label {
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  margin: 42px 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid color-mix(in srgb, var(--accent) 38%, transparent);
+}
+.inst + .role-label { margin-top: 0; }
+.teach-block + .teach-block { margin-top: 50px; }
